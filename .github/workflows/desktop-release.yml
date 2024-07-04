@@ -1,4 +1,4 @@
-name: Desktop Reusable Release Workflow
+name: Desktop Release
 
 on:
   push:
