@@ -16,7 +16,7 @@ export function IframeEditors(): IframeComponentFeatureDescription[] {
     description:
       'Encrypt and protect your 2FA secrets for all your internet accounts. Authenticator handles your 2FA secrets so that you never lose them again, or have to start over when you get a new device.',
     thumbnail_url: 'https://assets.standardnotes.com/screenshots/models/editors/token-vault.png',
-    availableInRoles: [RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
+    availableInRoles: [RoleName.NAMES.CoreUser, RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
   })
 
   const spreadsheets = FillIframeEditorDefaults({
@@ -29,7 +29,7 @@ export function IframeEditors(): IframeComponentFeatureDescription[] {
     description:
       'A powerful spreadsheet editor with formatting and formula support. Not recommended for large data sets, as encryption of such data may decrease editor performance.',
     thumbnail_url: 'https://assets.standardnotes.com/screenshots/models/editors/spreadsheets.png',
-    availableInRoles: [RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
+    availableInRoles: [RoleName.NAMES.CoreUser, RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
   })
 
   return [tokenvault, spreadsheets]

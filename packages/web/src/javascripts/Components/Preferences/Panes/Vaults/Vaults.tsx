@@ -58,12 +58,10 @@ const Vaults = observer(() => {
       return !vault.isSharedVaultListing() ? true : application.vaultUsers.isCurrentUserSharedVaultOwner(vault)
     })
 
-    if (featuresService.hasMinimumRole(RoleName.NAMES.ProUser)) {
+    if (featuresService.hasMinimumRole(RoleName.NAMES.CoreUser)) {
       setCanCreateMoreVaults(true)
-    } else if (featuresService.hasMinimumRole(RoleName.NAMES.PlusUser)) {
-      setCanCreateMoreVaults(ownedVaults.length < 3)
     } else {
-      setCanCreateMoreVaults(ownedVaults.length < 1)
+      setCanCreateMoreVaults(true)
     }
 
     setVaults(vaults)
