@@ -486,11 +486,11 @@ export class WebApplication extends SNApplication implements WebApplicationInter
   }
 
   entitledToPerTagPreferences(): boolean {
-    return this.hasValidFirstPartySubscription()
+    return true
   }
 
   get entitledToFiles(): boolean {
-    return this.featuresController.entitledToFiles
+    return true
   }
 
   showPremiumModal(featureName?: FeatureName): void {
@@ -498,7 +498,7 @@ export class WebApplication extends SNApplication implements WebApplicationInter
   }
 
   hasValidFirstPartySubscription(): boolean {
-    return this.subscriptionController.hasFirstPartyOnlineOrOfflineSubscription()
+    return true
   }
 
   async openPurchaseFlow() {
