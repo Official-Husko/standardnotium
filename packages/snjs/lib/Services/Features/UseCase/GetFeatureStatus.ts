@@ -47,8 +47,6 @@ export class GetFeatureStatusUseCase {
     hasPaidAnyPartyOnlineOrOfflineSubscription: boolean
     nativeFeature: AnyFeatureDescription
   }): FeatureStatus {
-    // "Use" the variables in a meaningless way to avoid TypeScript errors
-    const _ = dto.hasPaidAnyPartyOnlineOrOfflineSubscription || dto.nativeFeature;
     return FeatureStatus.Entitled
   }
 
@@ -58,20 +56,14 @@ export class GetFeatureStatusUseCase {
     firstPartyRoles: { online: string[] } | { offline: string[] } | undefined
     inContextOfItem?: DecryptedItemInterface
   }): FeatureStatus {
-    // "Use" the variables in a meaningless way to avoid TypeScript errors
-    const _ = dto.nativeFeature || dto.firstPartyOnlineSubscription || dto.firstPartyRoles || dto.inContextOfItem;
     return FeatureStatus.Entitled
   }
 
   private getThirdPartyFeatureStatus(uuid: Uuid): FeatureStatus {
-    // "Use" the variable in a meaningless way to avoid TypeScript errors
-    const _ = uuid;
     return FeatureStatus.Entitled
   }
 
   private isFreeFeature(featureId: NativeFeatureIdentifier | Uuid): boolean {
-    // "Use" the variable in a meaningless way to avoid TypeScript errors
-    const _ = featureId;
     return true
   }
 }
