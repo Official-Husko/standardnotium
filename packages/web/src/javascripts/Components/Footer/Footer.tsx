@@ -26,7 +26,6 @@ import { EditorEventSource } from '@/Types/EditorEventSource'
 import QuickSettingsButton from './QuickSettingsButton'
 import AccountMenuButton from './AccountMenuButton'
 import StyledTooltip from '../StyledTooltip/StyledTooltip'
-import UpgradeNow from './UpgradeNow'
 import PreferencesButton from './PreferencesButton'
 import VaultSelectionButton from './VaultSelectionButton'
 
@@ -378,11 +377,6 @@ class Footer extends AbstractComponent<Props, State> {
             <div className="relative z-footer-bar-item  ml-1.5 select-none">
               <VaultSelectionButton />
             </div>
-            <UpgradeNow
-              application={this.application}
-              featuresController={this.application.featuresController}
-              subscriptionContoller={this.application.subscriptionController}
-            />
             {this.state.showBetaWarning && (
               <Fragment>
                 <div className="relative z-footer-bar-item ml-3 flex select-none items-center border-l border-solid border-border pl-3">
