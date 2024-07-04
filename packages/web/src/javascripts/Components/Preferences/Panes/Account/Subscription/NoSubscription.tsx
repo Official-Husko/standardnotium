@@ -29,7 +29,7 @@ const NoSubscription: FunctionComponent<Props> = ({ application }) => {
 
   return (
     <>
-      <Text>You don't have a Standard Notes subscription yet.</Text>
+      <Text>You don't have a Standard Notium subscription yet.</Text>
       {isLoadingPurchaseFlow && <Text>Redirecting you to the subscription page...</Text>}
       {purchaseFlowError && <Text className="text-danger">{purchaseFlowError}</Text>}
       <div className="flex">

@@ -162,7 +162,7 @@ export class MomentsService extends AbstractViewController implements InternalEv
         }
         addToast({
           type: ToastType.Error,
-          message: 'Please enable Camera permissions for Standard Notes to enable Moments.',
+          message: 'Please enable Camera permissions for Standard Notium to enable Moments.',
           duration: 3000,
         })
 

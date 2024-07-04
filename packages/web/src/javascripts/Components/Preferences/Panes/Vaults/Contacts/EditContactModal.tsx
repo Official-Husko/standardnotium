@@ -125,7 +125,7 @@ const EditContactModal: FunctionComponent<Props> = ({ onCloseDialog, fromInvite,
 
         {!editContactUuid && (
           <p>
-            Ask your contact for their Standard Notes CollaborationID via secure email or chat. Then, enter it here to
+            Ask your contact for their Standard Notium CollaborationID via secure email or chat. Then, enter it here to
             add them as a contact.
           </p>
         )}

@@ -3,7 +3,7 @@
   "main": "./app/dist/index.js",
   "version": "3.110.81",
   "license": "AGPL-3.0",
-  "author": "Standard Notes.",
+  "author": "Standard Notium",
   "private": true,
   "repository": {
     "type": "git",
@@ -96,7 +96,7 @@
     ],
     "protocols": [
       {
-        "name": "Standard Notes",
+        "name": "Standard Notium",
         "schemes": [
           "standardnotes"
         ]
@@ -108,7 +108,7 @@
       "entitlements": "./build/entitlements.mac.inherit.plist",
       "entitlementsInherit": "./build/entitlements.mac.inherit.plist",
       "extendInfo": {
-        "NSCameraUsageDescription": "Standard Notes requires access to your camera to enable the Moments feature."
+        "NSCameraUsageDescription": "Standard Notium requires access to your camera to enable the Moments feature."
       },
       "asarUnpack": [
         "node_modules/keytar",
@@ -120,8 +120,8 @@
       ]
     },
     "win": {
-      "certificateSubjectName": "Standard Notes Ltd.",
-      "publisherName": "Standard Notes Ltd.",
+      "certificateSubjectName": "Standard Notium Ltd.",
+      "publisherName": "Standard Notium Ltd.",
       "signDlls": true,
       "sign": "scripts/windowsSign.js"
     },
@@ -133,7 +133,7 @@
       "icon": "build/icon/",
       "executableName": "standard-notes",
       "desktop": {
-        "StartupWMClass": "standard notes"
+        "StartupWMClass": "Standard Notium"
       },
       "target": [
         "AppImage",

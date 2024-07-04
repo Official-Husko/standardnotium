@@ -89,7 +89,7 @@ export class SNApplicationGroup<D extends DeviceInterface = DeviceInterface> ext
   private async createNewDescriptorRecord() {
     /**
      * The identifier 'standardnotes' is used because this was the
-     * database name of Standard Notes web/desktop
+     * database name of Standard Notium web/desktop
      * */
     const identifier = 'standardnotes'
     const descriptorRecord: DescriptorRecord = {

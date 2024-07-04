@@ -5,7 +5,7 @@
     "access": "public"
   },
   "description": "Models used in SNJS library",
-  "author": "Standard Notes",
+  "author": "Standard Notium",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "license": "AGPL-3.0",

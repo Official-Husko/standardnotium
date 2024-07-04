@@ -195,7 +195,7 @@ describe('actions service', () => {
   it('should get extension items', async function () {
     await application.mutator.createItem(ContentType.TYPES.Note, {
       title: 'A simple note',
-      text: 'Standard Notes rocks! lml.',
+      text: 'Standard Notium rocks! lml.',
     })
     const extensions = actionsManager.getExtensions()
     expect(extensions.length).to.eq(1)

@@ -6,7 +6,7 @@
   },
   "description": "SNCrypto common",
   "main": "dist/index.js",
-  "author": "Standard Notes",
+  "author": "Standard Notium",
   "types": "dist/index.d.ts",
   "files": [
     "dist"

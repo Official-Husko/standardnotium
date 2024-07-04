@@ -149,7 +149,7 @@ const ConfirmPassword: FunctionComponent<Props> = ({ setMenuPane, email, passwor
     <>
       <div className="mb-3 px-3 text-sm">
         Because your notes are encrypted using your password,{' '}
-        <span className="text-danger">Standard Notes does not have a password reset option</span>. If you forget your
+        <span className="text-danger">Standard Notium does not have a password reset option</span>. If you forget your
         password, you will permanently lose access to your data.
       </div>
       <form onSubmit={handleConfirmFormSubmit} className="mb-1 px-3">

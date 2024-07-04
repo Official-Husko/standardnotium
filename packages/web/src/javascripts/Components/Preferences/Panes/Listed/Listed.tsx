@@ -36,7 +36,7 @@ const Listed = ({ application }: Props) => {
       if (account) {
         const openSettings = await application.alerts.confirm(
           'Your new Listed blog has been successfully created!' +
-            ' You can publish a new post to your blog from Standard Notes via the' +
+            ' You can publish a new post to your blog from Standard Notium via the' +
             ' <i>Actions</i> menu in the editor pane. Open your blog settings to begin setting it up.',
           undefined,
           'Open Settings',
@@ -85,7 +85,7 @@ const Listed = ({ application }: Props) => {
           <Text>
             Listed is a free blogging platform that allows you to create a public journal published directly from your
             notes.{' '}
-            {!application.sessions.getUser() && 'To get started, sign in or register for a Standard Notes account.'}
+            {!application.sessions.getUser() && 'To get started, sign in or register for a Standard Notium account.'}
           </Text>
           <a className="mt-2 text-info" target="_blank" href="https://listed.to" rel="noreferrer noopener">
             Learn more

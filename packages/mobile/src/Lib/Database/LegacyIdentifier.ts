@@ -1,7 +1,7 @@
 import { ApplicationIdentifier } from '@standardnotes/snjs'
 
 /**
- * This identifier was the database name used in Standard Notes web/desktop.
+ * This identifier was the database name used in Standard Notium web/desktop.
  */
 const LEGACY_IDENTIFIER = 'standardnotes'
 

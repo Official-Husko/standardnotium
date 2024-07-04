@@ -4,9 +4,9 @@
   "engines": {
     "node": ">=16.0.0 <17.0.0"
   },
-  "description": "UI Services for Standard Notes clients",
+  "description": "UI Services for Standard Notium clients",
   "main": "./src/index.ts",
-  "author": "Standard Notes",
+  "author": "Standard Notium",
   "private": true,
   "license": "AGPL-3.0",
   "scripts": {

@@ -68,7 +68,7 @@ const GeneralAccountMenu: FunctionComponent<Props> = ({ setMenuPane, closeMenu, 
   }, [application])
 
   const openEmail = useCallback(() => {
-    const subject = 'Standard Notes Feedback'
+    const subject = 'Standard Notium Feedback'
 
     const body = `App Version: ${application.version}`
 

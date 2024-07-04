@@ -4,9 +4,9 @@
   "engines": {
     "node": ">=16.0.0 <17.0.0"
   },
-  "description": "Web filepicker for Standard Notes projects",
+  "description": "Web filepicker for Standard Notium projects",
   "main": "./src/index.ts",
-  "author": "Standard Notes",
+  "author": "Standard Notium",
   "types": "./src/index.ts",
   "private": true,
   "license": "AGPL-3.0",

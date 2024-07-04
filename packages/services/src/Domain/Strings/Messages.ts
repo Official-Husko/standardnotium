@@ -53,7 +53,7 @@ export const API_MESSAGE_FAILED_OFFLINE_ACTIVATION =
 export const INVALID_EXTENSION_URL = 'Invalid extension URL.'
 
 export const UNSUPPORTED_PROTOCOL_VERSION =
-  'This version of the application does not support your newer account type. Please upgrade to the latest version of Standard Notes to sign in.'
+  'This version of the application does not support your newer account type. Please upgrade to the latest version of Standard Notium to sign in.'
 
 export const EXPIRED_PROTOCOL_VERSION =
   'The protocol version associated with your account is outdated and no longer supported by this application. Please visit standardnotes.com/help/security for more information.'

@@ -51,8 +51,6 @@ jobs:
           name: assets
           path: |
             packages/desktop/dist/*.AppImage
-            packages/desktop/dist/*.yml
-            packages/desktop/dist/*.yaml
 
   Linux-Dir:
     name: Linux Dir
@@ -141,8 +139,6 @@ jobs:
           name: assets
           path: |
             packages/desktop/dist/*.deb
-            packages/desktop/dist/*.yml
-            packages/desktop/dist/*.yaml
 
   Linux-Snap:
     name: Linux Snap
@@ -194,8 +190,6 @@ jobs:
           name: assets
           path: |
             packages/desktop/dist/*.snap
-            packages/desktop/dist/*.yml
-            packages/desktop/dist/*.yaml
 
   Windows:
     runs-on: windows-latest
@@ -240,8 +234,5 @@ jobs:
         with:
           name: assets
           path: |
-            packages/desktop/dist/*.blockmap
             packages/desktop/dist/*.exe
-            packages/desktop/dist/*.yml
-            packages/desktop/dist/*.yaml
 

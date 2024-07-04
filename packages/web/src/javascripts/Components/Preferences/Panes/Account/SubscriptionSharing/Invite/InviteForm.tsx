@@ -25,7 +25,7 @@ const InviteForm: FunctionComponent<Props> = ({ setInviteeEmail }) => {
 
         <p className="mt-4">
           <span className="font-bold">Note: </span>
-          The invitee must have an existing account with Standard Notes. If they do not have an account yet, instruct
+          The invitee must have an existing account with Standard Notium. If they do not have an account yet, instruct
           them to make an account first.
         </p>
       </div>

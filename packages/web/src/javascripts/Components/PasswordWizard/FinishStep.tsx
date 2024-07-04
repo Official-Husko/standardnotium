@@ -9,7 +9,7 @@ export const FinishStep = () => {
         </div>
         <div className="flex flex-col">
           <div className="text-base font-bold">Your password has been successfully changed.</div>
-          <p>Ensure you are running the latest version of Standard Notes on all platforms for maximum compatibility.</p>
+          <p>Ensure you are running the latest version of Standard Notium on all platforms for maximum compatibility.</p>
         </div>
       </div>
     </div>

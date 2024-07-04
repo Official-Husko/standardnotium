@@ -459,7 +459,7 @@ export class ComponentViewer implements ComponentViewerInterface {
     if (!this.window) {
       if (essential) {
         void this.services.alerts.alert(
-          `Standard Notes is trying to communicate with ${this.componentOrFeature.displayName}, ` +
+          `Standard Notium is trying to communicate with ${this.componentOrFeature.displayName}, ` +
             'but an error is occurring. Please restart this extension and try again.',
         )
       }
@@ -559,7 +559,7 @@ export class ComponentViewer implements ComponentViewerInterface {
     if (!this.componentOrFeature) {
       this.services.logger.info('Component not defined for message, returning', message)
       void this.services.alerts.alert(
-        'A component is trying to communicate with Standard Notes, ' +
+        'A component is trying to communicate with Standard Notium, ' +
           'but there is an error establishing a bridge. Please restart the app and try again.',
       )
       return

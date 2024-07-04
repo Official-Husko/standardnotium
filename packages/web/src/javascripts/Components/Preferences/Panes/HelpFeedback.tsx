@@ -62,16 +62,16 @@ const HelpAndFeedback = ({ application }: { application: WebApplication }) => {
         <PreferencesSegment>
           <Subtitle>Can I collaborate with others on a note?</Subtitle>
           <Text>
-            Because of our encrypted architecture, Standard Notes does not currently provide a real-time collaboration
+            Because of our encrypted architecture, Standard Notium does not currently provide a real-time collaboration
             solution. Multiple users can share the same account however, but editing at the same time may result in sync
             conflicts, which may result in the duplication of notes.
           </Text>
         </PreferencesSegment>
         <HorizontalSeparator classes="my-4" />
         <PreferencesSegment>
-          <Subtitle>Can I use Standard Notes totally offline?</Subtitle>
+          <Subtitle>Can I use Standard Notium totally offline?</Subtitle>
           <Text>
-            Standard Notes can be used totally offline without an account, and without an internet connection. You can
+            Standard Notium can be used totally offline without an account, and without an internet connection. You can
             find{' '}
             <a
               target="_blank"
@@ -109,7 +109,7 @@ const HelpAndFeedback = ({ application }: { application: WebApplication }) => {
           <Title>Community groups</Title>
           <Text>
             Want to meet other passionate note-takers and privacy enthusiasts? Want to share your feedback with us? Join
-            the Standard Notes Discord for discussions on security, themes, editors and more.
+            the Standard Notium Discord for discussions on security, themes, editors and more.
           </Text>
           <LinkButton
             className="mt-3"
