@@ -44,13 +44,13 @@ const GeneralAccountMenu: FunctionComponent<Props> = ({ setMenuPane, closeMenu, 
         </div>
         <div className="flex items-center text-passive-1">
           <Icon type="cloud-off" className={`mr-2 ${MenuItemIconSize}`} />
-          <span className="text-lg font-semibold lg:text-sm">"</span>
+          <span className="text-lg font-semibold lg:text-sm">Fully Local Fork</span>
         </div>
       </div>
       <Menu
         a11yLabel="General account menu"
         closeMenu={closeMenu}
-        initialFocus={!application.hasAccount() ? SWITCHER_INDEX : undefined} // Corrected fallback value
+        initialFocus={!application.hasAccount() ? SWITCHER_INDEX : undefined}
       >
         <MenuSection className="md:border-t md:pt-2">
           <WorkspaceSwitcherOption mainApplicationGroup={mainApplicationGroup} />
