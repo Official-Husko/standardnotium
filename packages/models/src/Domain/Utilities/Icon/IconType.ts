@@ -60,7 +60,6 @@ export type IconType =
   | 'eye-off-filled'
   | 'eye-off'
   | 'eye'
-  | 'feedback'
   | 'file-filled'
   | 'file'
   | 'file-other'

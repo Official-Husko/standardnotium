@@ -7,7 +7,6 @@ import General from './Panes/General/General'
 import AccountPreferences from './Panes/Account/AccountPreferences'
 import Security from './Panes/Security/Security'
 import Listed from './Panes/Listed/Listed'
-import HelpAndFeedback from './Panes/HelpFeedback'
 import { PreferencesProps } from './PreferencesProps'
 import WhatsNew from './Panes/WhatsNew/WhatsNew'
 import HomeServer from './Panes/HomeServer/HomeServer'
@@ -43,8 +42,6 @@ const PaneSelector: FunctionComponent<PreferencesProps & { menu: PreferencesSess
       return null
     case 'get-free-month':
       return null
-    case 'help-feedback':
-      return <HelpAndFeedback application={application} />
     case 'whats-new':
       return <WhatsNew application={application} />
     default:

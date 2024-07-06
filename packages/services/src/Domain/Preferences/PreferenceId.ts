@@ -11,7 +11,6 @@ const PREFERENCE_PANE_IDS = [
   'shortcuts',
   'accessibility',
   'get-free-month',
-  'help-feedback',
   'whats-new',
 ] as const
 

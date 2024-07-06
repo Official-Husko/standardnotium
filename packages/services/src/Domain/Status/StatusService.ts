@@ -19,7 +19,6 @@ export class StatusService extends AbstractService<StatusServiceEvent, string> i
     plugins: 0,
     accessibility: 0,
     'get-free-month': 0,
-    'help-feedback': 0,
     'whats-new': 0,
   }
 
