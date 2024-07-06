@@ -8,23 +8,11 @@ Standard Notium is a Fork of Standard Notes that focuses on Privacy and Security
 
 <br />
 
-> [!NOTE]  
-> If you can afford to purchase a license please do so to support them and their awesome open-source approach. This Fork is mainly for people that cannot afford it or which wish to use the app without any account related things and online services.
-
-<br />
-
 ### Why Standard Notium?
 
 - Fully Local
 - Removed Online Services
-- Unlocked all Themes
-- Unlocked Smart Views
-- Unlocked Moments
-- Unlocked Plugin Gallery
-- Unlocked Tags
-- Unlocked Super Notes & Other Note Types
-- Unlocked Folders
-- Unlocked Files
+- Unlocked All Subscription Features
 
 <br />
 
