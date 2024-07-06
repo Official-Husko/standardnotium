@@ -6,7 +6,6 @@ import Appearance from './Panes/Appearance'
 import General from './Panes/General/General'
 import AccountPreferences from './Panes/Account/AccountPreferences'
 import Security from './Panes/Security/Security'
-import Listed from './Panes/Listed/Listed'
 import { PreferencesProps } from './PreferencesProps'
 import WhatsNew from './Panes/WhatsNew/WhatsNew'
 import HomeServer from './Panes/HomeServer/HomeServer'
@@ -32,8 +31,6 @@ const PaneSelector: FunctionComponent<PreferencesProps & { menu: PreferencesSess
       return <Vaults />
     case 'backups':
       return <Backups application={application} />
-    case 'listed':
-      return <Listed application={application} />
     case 'shortcuts':
       return null
     case 'plugins':
