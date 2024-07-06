@@ -16,25 +16,9 @@ type Props = {
 }
 
 const AccountPreferences = ({ application }: Props) => {
-  const isUsingThirdPartyServer = !application.sessions.isSignedIntoFirstPartyServer()
-
   return (
     <PreferencesPane>
-      {!application.hasAccount() ? (
-        <Authentication application={application} />
-      ) : (
-        <>
-          <Credentials application={application} />
-          <Sync application={application} />
-        </>
-      )}
-      <Subscription />
-      {application.hasAccount() && application.featuresController.entitledToFiles && (
-        <FilesSection application={application} />
-      )}
-      {application.hasAccount() && !isUsingThirdPartyServer && <Email application={application} />}
       <SignOutWrapper application={application} />
-      <DeleteAccount application={application} />
     </PreferencesPane>
   )
 }
