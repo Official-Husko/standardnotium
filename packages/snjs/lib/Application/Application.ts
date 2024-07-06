@@ -612,7 +612,7 @@ export class SNApplication implements ApplicationInterface, AppGroupManagedAppli
    * Returns true if there is an encryption source available
    */
   public isEncryptionAvailable(): boolean {
-    return this.hasAccount() || this.hasPasscode()
+    return this.hasPasscode()
   }
 
   public async upgradeProtocolVersion(): Promise<{
