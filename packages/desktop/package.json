@@ -122,8 +122,8 @@
     "win": {
       "certificateSubjectName": "Standard Notium",
       "publisherName": "Standard Notium",
-      "signDlls": true,
-      "sign": "scripts/windowsSign.js"
+      "signDlls": false,
+      "sign": ""
     },
     "nsis": {
       "deleteAppDataOnUninstall": true
