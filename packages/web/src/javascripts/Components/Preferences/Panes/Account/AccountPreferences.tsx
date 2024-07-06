@@ -19,7 +19,7 @@ type Props = {
 const AccountPreferences = ({ application }: Props) => {
   return (
     <PreferencesPane>
-      <ClearSessionDataView application={application} />
+      <ClearSessionDataView/>
     </PreferencesPane>
   )
 }
