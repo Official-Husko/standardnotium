@@ -120,8 +120,8 @@
       ]
     },
     "win": {
-      "certificateSubjectName": "Standard Notium Ltd.",
-      "publisherName": "Standard Notium Ltd.",
+      "certificateSubjectName": "Standard Notium",
+      "publisherName": "Standard Notium",
       "signDlls": true,
       "sign": "scripts/windowsSign.js"
     },
@@ -131,7 +131,7 @@
     "linux": {
       "category": "Office",
       "icon": "build/icon/",
-      "executableName": "standard-notes",
+      "executableName": "standard-notium",
       "desktop": {
         "StartupWMClass": "Standard Notium"
       },
