@@ -428,11 +428,6 @@ class Footer extends AbstractComponent<Props, State> {
                 )}
               </div>
             )}
-            {this.state.offline && (
-              <div className="relative z-footer-bar-item ml-3 flex flex-shrink-0 select-none items-center text-xs font-bold">
-                {this.application.version}
-              </div>
-            )}
             {this.state.hasPasscode && (
               <StyledTooltip label="Lock application">
                 <div
@@ -444,6 +439,11 @@ class Footer extends AbstractComponent<Props, State> {
                   <Icon type="lock-filled" size="custom" className="h-4.5 w-4.5" />
                 </div>
               </StyledTooltip>
+            )}
+            {this.state.offline && (
+              <div className="relative z-footer-bar-item ml-3 flex flex-shrink-0 select-none items-center text-xs font-bold">
+                v{this.application.version}
+              </div>
             )}
           </div>
         </footer>
