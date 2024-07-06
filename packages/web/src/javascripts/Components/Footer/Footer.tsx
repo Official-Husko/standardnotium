@@ -430,7 +430,7 @@ class Footer extends AbstractComponent<Props, State> {
             )}
             {this.state.offline && (
               <div className="relative z-footer-bar-item ml-3 flex flex-shrink-0 select-none items-center text-xs font-bold">
-                Local
+                {this.application.version}
               </div>
             )}
             {this.state.hasPasscode && (
