@@ -182,7 +182,7 @@ jobs:
           yarn run electron-builder --linux --x64 -c.linux.target=snap --publish=never --c.extraMetadata.version=${{ env.APP_VERSION }}
 
       - name: Review Snap
-        run: review-tools.snap-review dist/standard-notes-${{ env.APP_VERSION }}-linux-amd64.snap
+        run: review-tools.snap-review dist/standard-notium-${{ env.APP_VERSION }}-linux-amd64.snap
 
       - name: Upload
         uses: actions/upload-artifact@v3.0.0
