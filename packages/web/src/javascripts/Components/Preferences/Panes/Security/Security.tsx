@@ -20,7 +20,7 @@ interface SecurityProps {
 
 const Security: FunctionComponent<SecurityProps> = (props) => {
   const isNativeMobileWeb = props.application.isNativeMobileWeb()
-  const [is2FAEnabled, setIs2FAEnabled] = useState(false)
+  const [is2FAEnabled, setIs2FAEnabled] = useState(true)
   const [canDisable2FA, setCanDisable2FA] = useState(true)
 
   const [auth] = useState(
