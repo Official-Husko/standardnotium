@@ -10,6 +10,7 @@ import FilesSection from './Files'
 import PreferencesPane from '../../PreferencesComponents/PreferencesPane'
 import Email from './Email/Email'
 import DeleteAccount from '@/Components/Preferences/Panes/Account/DeleteAccount'
+import ClearSessionDataView from './ClearSessionDataView'
 
 type Props = {
   application: WebApplication
@@ -18,7 +19,7 @@ type Props = {
 const AccountPreferences = ({ application }: Props) => {
   return (
     <PreferencesPane>
-      <SignOutWrapper application={application} />
+      <ClearSessionDataView application={application} />
     </PreferencesPane>
   )
 }
