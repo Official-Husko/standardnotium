@@ -19,7 +19,6 @@ export class NativeFeatureIdentifier extends ValueObject<NativeFeatureIdentifier
     TagNesting: 'org.standardnotes.tag-nesting',
     TwoFactorAuth: 'org.standardnotes.two-factor-auth',
     UniversalSecondFactor: 'org.standardnotes.universal-second-factor',
-    SubscriptionSharing: 'org.standardnotes.subscription-sharing',
 
     AutobiographyTheme: 'org.standardnotes.theme-autobiography',
     DynamicTheme: 'org.standardnotes.theme-dynamic',

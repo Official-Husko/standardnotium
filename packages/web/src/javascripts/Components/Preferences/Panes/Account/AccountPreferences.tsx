@@ -8,7 +8,6 @@ import Subscription from './Subscription/Subscription'
 import SignOutWrapper from './SignOutView'
 import FilesSection from './Files'
 import PreferencesPane from '../../PreferencesComponents/PreferencesPane'
-import SubscriptionSharing from './SubscriptionSharing/SubscriptionSharing'
 import Email from './Email/Email'
 import DeleteAccount from '@/Components/Preferences/Panes/Account/DeleteAccount'
 
@@ -30,7 +29,6 @@ const AccountPreferences = ({ application }: Props) => {
         </>
       )}
       <Subscription />
-      <SubscriptionSharing application={application} />
       {application.hasAccount() && application.featuresController.entitledToFiles && (
         <FilesSection application={application} />
       )}

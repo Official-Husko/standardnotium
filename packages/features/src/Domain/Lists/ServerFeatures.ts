@@ -54,12 +54,6 @@ export function serverFeatures(): ServerFeatureDescription[] {
       availableInRoles: [RoleName.NAMES.CoreUser, RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
     },
     {
-      name: 'Files medium storage tier',
-      identifier: NativeFeatureIdentifier.TYPES.SubscriptionSharing,
-      permission_name: PermissionName.SubscriptionSharing,
-      availableInRoles: [RoleName.NAMES.CoreUser, RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
-    },
-    {
       name: 'Listed Custom Domain',
       identifier: NativeFeatureIdentifier.TYPES.ListedCustomDomain,
       permission_name: PermissionName.ListedCustomDomain,
