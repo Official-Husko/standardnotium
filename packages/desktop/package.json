@@ -86,7 +86,7 @@
   "build": {
     "appId": "com.husko.standardnotium",
     "artifactName": "standard-notium-${version}-${os}-${arch}.${ext}",
-    "afterSign": "",
+    "afterSign": "scripts/notarizeMac.js",
     "files": [
       "compiled/**/*",
       "dist/**/*",
@@ -102,6 +102,23 @@
         ]
       }
     ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "hardenedRuntime": true,
+      "entitlements": "./build/entitlements.mac.inherit.plist",
+      "entitlementsInherit": "./build/entitlements.mac.inherit.plist",
+      "extendInfo": {
+        "NSCameraUsageDescription": "Standard Notium requires access to your camera to enable the Moments feature."
+      },
+      "asarUnpack": [
+        "node_modules/keytar",
+        "node_modules/@standardnotes/home-server"
+      ],
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
     "win": {
       "certificateSubjectName": "Standard Notium",
       "publisherName": "Standard Notium",
