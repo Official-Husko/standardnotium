@@ -7,7 +7,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/standardnotes/app"
+    "url": "git://github.com/Official-Husko/standardnotium"
   },
   "workspaces": {
     "packages": [
