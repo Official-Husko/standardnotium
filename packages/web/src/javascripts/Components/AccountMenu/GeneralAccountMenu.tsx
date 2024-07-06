@@ -50,7 +50,7 @@ const GeneralAccountMenu: FunctionComponent<Props> = ({ setMenuPane, closeMenu, 
       <Menu
         a11yLabel="General account menu"
         closeMenu={closeMenu}
-        initialFocus={!application.hasAccount() ? SWITCHER_INDEX : null} // Fixed the missing fallback value
+        initialFocus={!application.hasAccount() ? SWITCHER_INDEX : undefined} // Corrected fallback value
       >
         <MenuSection className="md:border-t md:pt-2">
           <WorkspaceSwitcherOption mainApplicationGroup={mainApplicationGroup} />
