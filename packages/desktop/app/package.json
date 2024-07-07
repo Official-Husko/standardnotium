@@ -4,7 +4,7 @@
   "private": true,
   "version": "3.108.192",
   "description": "An end-to-end encrypted notes app for digitalists and professionals.",
-  "author": "Standard Notium <help@standardnotes.com>",
+  "author": "Standard Notium",
   "main": "./dist/index.js",
   "installConfig": {
     "selfReferences": true
