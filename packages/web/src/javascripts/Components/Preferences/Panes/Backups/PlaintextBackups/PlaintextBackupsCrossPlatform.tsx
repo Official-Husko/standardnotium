@@ -18,7 +18,7 @@ const PlaintextBackupsCrossPlatform = () => {
         <PreferencesSegment>
           <Title>Automatic plaintext backups</Title>
           <Subtitle>Automatically save backups of all your notes into plaintext, non-encrypted folders.</Subtitle>
-          <Text className="mt-3">To enable plaintext backups, use the Standard Notes desktop application.</Text>
+          <Text className="mt-3">To enable plaintext backups, use the Standard Notium desktop application.</Text>
         </PreferencesSegment>
       </PreferencesGroup>
     </>

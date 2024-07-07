@@ -90,7 +90,7 @@ export const UpgradePrompt = ({
           )}
           {!featureName && (
             <span>
-              To take advantage of all the advanced features Standard Notes has to offer, upgrade your current plan.
+              To take advantage of all the advanced features Standard Notium has to offer, upgrade your current plan.
             </span>
           )}
           {application.isNativeIOS() && (

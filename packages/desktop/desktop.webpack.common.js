@@ -9,7 +9,7 @@ const webpack = require('webpack')
 const { DefinePlugin } = require('webpack')
 const TerserPlugin = require('terser-webpack-plugin')
 
-module.exports = function ({ onlyTranspileTypescript = false, experimentalFeatures = false, snap = false } = {}) {
+module.exports = function ({ onlyTranspileTypescript = false, experimentalFeatures = true, snap = false } = {}) {
   const moduleConfig = {
     rules: [
       {

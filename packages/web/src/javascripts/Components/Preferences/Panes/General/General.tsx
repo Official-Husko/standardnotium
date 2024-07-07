@@ -3,7 +3,6 @@ import { observer } from 'mobx-react-lite'
 import Tools from './Tools'
 import Defaults from './Defaults'
 import LabsPane from './Labs/Labs'
-import OfflineActivation from '@/Components/Preferences/Panes/General/Offline/OfflineActivation'
 import PreferencesPane from '../../PreferencesComponents/PreferencesPane'
 import Persistence from './Persistence'
 import SmartViews from './SmartViews/SmartViews'
@@ -23,7 +22,6 @@ const General: FunctionComponent = () => {
       <SmartViews application={application} featuresController={application.featuresController} />
       <Moments application={application} />
       <LabsPane application={application} />
-      <OfflineActivation />
     </PreferencesPane>
   )
 }

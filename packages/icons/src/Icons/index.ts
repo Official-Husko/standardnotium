@@ -67,7 +67,6 @@ import EyeFilledIcon from './ic-eye-filled.svg'
 import EyeIcon from './ic-eye.svg'
 import EyeOffFilledIcon from './ic-eye-off-filled.svg'
 import EyeOffIcon from './ic-eye-off.svg'
-import FeedbackIcon from './ic-feedback.svg'
 import FileDocIcon from './ic-file-doc.svg'
 import FileErrorIcon from './ic-file-error.svg'
 import FileFilledIcon from './ic-file-filled.svg'
@@ -289,7 +288,6 @@ export {
   EyeIcon,
   EyeOffFilledIcon,
   EyeOffIcon,
-  FeedbackIcon,
   FileDocIcon,
   FileErrorIcon,
   FileFilledIcon,

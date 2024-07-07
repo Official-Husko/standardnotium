@@ -62,7 +62,7 @@ export function createEnglishStrings(): Strings {
         security: 'Security',
         useKeyringtoStorePassword: 'Use password storage to store password',
         enabledKeyringAccessMessage:
-          "Standard Notes will try to use your system's password storage " +
+          "Standard Notium will try to use your system's password storage " +
           'facility to store your password the next time you start it.',
         enabledKeyringQuitNow: 'Quit Now',
         enabledKeyringPostpone: 'Postpone',

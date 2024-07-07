@@ -164,7 +164,7 @@ const SignIn: FunctionComponent<Props> = ({ application }) => {
 
       <div>
         <h1 className="mb-2 mt-0 text-2xl font-bold">Sign in</h1>
-        <div className="mb-4 text-sm font-medium">to continue to Standard Notes.</div>
+        <div className="mb-4 text-sm font-medium">to continue to Standard Notium.</div>
         {showCaptcha ? captchaIframe : signInForm}
         <div className="text-sm font-medium text-passive-1">
           Don’t have an account yet?{' '}

@@ -102,7 +102,7 @@ export class FilesBackupManager implements FileBackupsDevice {
       return savedLocation
     }
 
-    const LegacyTextBackupsDirectory = 'Standard Notes Backups'
+    const LegacyTextBackupsDirectory = 'Standard Notium Backups'
     const homeDir = Paths.homeDir
     if (homeDir) {
       return path.join(homeDir, LegacyTextBackupsDirectory)

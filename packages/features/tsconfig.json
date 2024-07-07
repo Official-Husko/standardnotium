@@ -4,6 +4,8 @@
     "skipLibCheck": true,
     "rootDir": "./src",
     "outDir": "./dist",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   },
   "include": [
     "src/**/*"

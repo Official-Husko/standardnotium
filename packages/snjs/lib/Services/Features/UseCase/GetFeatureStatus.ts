@@ -47,11 +47,7 @@ export class GetFeatureStatusUseCase {
     hasPaidAnyPartyOnlineOrOfflineSubscription: boolean
     nativeFeature: AnyFeatureDescription
   }): FeatureStatus {
-    if (dto.hasPaidAnyPartyOnlineOrOfflineSubscription) {
-      return FeatureStatus.Entitled
-    } else {
-      return FeatureStatus.NoUserSubscription
-    }
+    return FeatureStatus.Entitled
   }
 
   private getNativeFeatureFeatureStatus(dto: {
@@ -60,64 +56,14 @@ export class GetFeatureStatusUseCase {
     firstPartyRoles: { online: string[] } | { offline: string[] } | undefined
     inContextOfItem?: DecryptedItemInterface
   }): FeatureStatus {
-    if (dto.inContextOfItem) {
-      const isSharedVaultItem = dto.inContextOfItem.shared_vault_uuid !== undefined
-      if (isSharedVaultItem) {
-        return FeatureStatus.Entitled
-      }
-    }
-
-    if (!dto.firstPartyOnlineSubscription && !dto.firstPartyRoles) {
-      return FeatureStatus.NoUserSubscription
-    }
-
-    const roles = !dto.firstPartyRoles
-      ? undefined
-      : 'online' in dto.firstPartyRoles
-      ? dto.firstPartyRoles.online
-      : dto.firstPartyRoles.offline
-
-    if (dto.nativeFeature.availableInRoles && roles) {
-      const hasRole = roles.some((role) => {
-        return dto.nativeFeature.availableInRoles?.includes(role)
-      })
-
-      if (!hasRole) {
-        return FeatureStatus.NotInCurrentPlan
-      }
-    }
-
-    if (dto.firstPartyOnlineSubscription) {
-      const isSubscriptionExpired =
-        new Date(convertTimestampToMilliseconds(dto.firstPartyOnlineSubscription.endsAt)) < new Date()
-
-      if (isSubscriptionExpired) {
-        return FeatureStatus.InCurrentPlanButExpired
-      }
-    }
-
     return FeatureStatus.Entitled
   }
 
   private getThirdPartyFeatureStatus(uuid: Uuid): FeatureStatus {
-    const component = this.items.getDisplayableComponents().find((candidate) => candidate.uuid === uuid.value)
-
-    if (!component) {
-      return FeatureStatus.NoUserSubscription
-    }
-
-    if (component.isExpired) {
-      return FeatureStatus.InCurrentPlanButExpired
-    }
-
     return FeatureStatus.Entitled
   }
 
-  private isFreeFeature(featureId: NativeFeatureIdentifier) {
-    return [
-      NativeFeatureIdentifier.TYPES.DarkTheme,
-      NativeFeatureIdentifier.TYPES.PlainEditor,
-      NativeFeatureIdentifier.TYPES.ProtonTheme,
-    ].includes(featureId.value)
+  private isFreeFeature(featureId: NativeFeatureIdentifier | Uuid): boolean {
+    return true
   }
 }

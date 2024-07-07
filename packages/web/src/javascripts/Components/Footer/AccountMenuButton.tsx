@@ -20,7 +20,7 @@ const AccountMenuButton = ({ hasError, controller, mainApplicationGroup, onClick
 
   return (
     <>
-      <StyledTooltip label="Open account menu">
+      <StyledTooltip label="Open workspace menu">
         <button
           ref={buttonRef}
           onClick={toggleMenu}
@@ -35,7 +35,7 @@ const AccountMenuButton = ({ hasError, controller, mainApplicationGroup, onClick
         </button>
       </StyledTooltip>
       <Popover
-        title="Account"
+        title="Workspace"
         anchorElement={buttonRef}
         open={isOpen}
         togglePopover={toggleMenu}

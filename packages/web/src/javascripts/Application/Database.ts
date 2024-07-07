@@ -10,7 +10,7 @@ const OUT_OF_SPACE =
   'up in an inconsistent state.'
 
 const DB_DELETION_BLOCKED =
-  'Your browser is blocking Standard Notes from deleting the local database. ' +
+  'Your browser is blocking Standard Notium from deleting the local database. ' +
   'Make sure there are no other open windows of this app and try again. ' +
   'If the issue persists, please manually delete app data to sign out.'
 

@@ -6,7 +6,6 @@ import { observer } from 'mobx-react-lite'
 import { forwardRef, useEffect, useState } from 'react'
 import { classNames } from '@standardnotes/utils'
 import { useResponsiveAppPane } from '../Panes/ResponsivePaneProvider'
-import UpgradeNow from '../Footer/UpgradeNow'
 import RoundIconButton from '../Button/RoundIconButton'
 import { PanelResizedData } from '@/Types/PanelResizedData'
 import { PANEL_NAME_NAVIGATION } from '@/Constants/Constants'
@@ -95,11 +94,6 @@ const Navigation = forwardRef<HTMLDivElement, Props>(({ application, className, 
           }}
           label="Go to items list"
           icon="chevron-left"
-        />
-        <UpgradeNow
-          application={application}
-          subscriptionContoller={application.subscriptionController}
-          featuresController={application.featuresController}
         />
         <RoundIconButton
           className="ml-2.5 bg-default"

@@ -4,9 +4,9 @@
   "engines": {
     "node": ">=16.0.0 <17.0.0"
   },
-  "description": "Common utilities for Standard Notes projects",
+  "description": "Common utilities for Standard Notium projects",
   "main": "dist/index.js",
-  "author": "Standard Notes",
+  "author": "Standard Notium",
   "types": "dist/index.d.ts",
   "files": [
     "dist"

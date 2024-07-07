@@ -32,7 +32,7 @@ const HomeServer = () => {
           <li className="mt-2">Download Tailscale on your mobile device and sign into your Tailscale account.</li>
           <li className="mt-2">Activate the Tailscale VPN on your mobile device.</li>
           <li className="mt-2">
-            Open Standard Notes on your mobile device and sign into your home server by specifying the sync server URL
+            Open Standard Notium on your mobile device and sign into your home server by specifying the sync server URL
             during sign in. The URL will be the Tailscale-based IP address of this computer, followed by the port number
             of your home server. For example, if your computer Tailscale IP address is 100.112.45.106 and your home
             server is running on port 3127, your sync server URL will be http://100.112.45.106:3127.
@@ -52,7 +52,7 @@ const HomeServer = () => {
           <li className="mt-2">Restart your home server.</li>
         </ol>
         <Text className="mt-3">
-          Your Standard Notes data is always end-to-end encrypted on disk, so your cloud provider will not be able to
+          Your Standard Notium data is always end-to-end encrypted on disk, so your cloud provider will not be able to
           read your notes or files.
         </Text>
       </PreferencesGroup>

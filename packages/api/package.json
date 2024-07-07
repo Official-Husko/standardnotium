@@ -6,7 +6,7 @@
   },
   "description": "Interfaces for dealing with SN server-side API",
   "main": "dist/index.js",
-  "author": "Standard Notes",
+  "author": "Standard Notium",
   "types": "dist/index.d.ts",
   "files": [
     "dist"

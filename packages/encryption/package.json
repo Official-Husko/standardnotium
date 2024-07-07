@@ -7,7 +7,7 @@
   "description": "Payload encryption used in SNJS library",
   "main": "./src/index.ts",
   "private": true,
-  "author": "Standard Notes",
+  "author": "Standard Notium",
   "license": "AGPL-3.0",
   "scripts": {
     "lint": "eslint src --ext .ts",

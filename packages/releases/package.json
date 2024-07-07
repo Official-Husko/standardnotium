@@ -7,8 +7,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "Standard Notes.",
-  "description": "Standard Notes client release versions",
+  "author": "Standard Notium",
+  "description": "Standard Notium client release versions",
   "engines": {
     "node": ">=12.19.0 <17.0.0"
   },

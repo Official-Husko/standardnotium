@@ -6,7 +6,7 @@
   },
   "description": "Client-side files library",
   "main": "./src/index.ts",
-  "author": "Standard Notes",
+  "author": "Standard Notium",
   "types": "./src/index.ts",
   "files": [
     "dist"

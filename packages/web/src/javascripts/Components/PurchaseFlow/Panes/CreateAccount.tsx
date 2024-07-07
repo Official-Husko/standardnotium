@@ -197,7 +197,7 @@ const CreateAccount: FunctionComponent<Props> = ({ application }) => {
 
       <div className="mr-0 lg:mr-12">
         <h1 className="mb-2 mt-0 text-2xl font-bold">Create your free account</h1>
-        <div className="mb-4 text-sm font-medium">to continue to Standard Notes.</div>
+        <div className="mb-4 text-sm font-medium">to continue to Standard Notium.</div>
         {captchaURL ? captchaIframe : CreateAccountForm}
         <div className="flex flex-col-reverse items-start justify-between md:flex-row md:items-center">
           <div className="flex flex-col">

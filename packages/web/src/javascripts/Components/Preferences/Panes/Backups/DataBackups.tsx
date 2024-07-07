@@ -74,7 +74,7 @@ const DataBackups = ({ application }: Props) => {
     })
 
     if (isBackupEncrypted) {
-      const filename = `Standard Notes Encrypted Backup and Import File - ${application.archiveService.formattedDateForExports()}`
+      const filename = `Standard Notium Encrypted Backup and Import File - ${application.archiveService.formattedDateForExports()}`
       const sanitizedFilename = sanitizeFileName(filename) + '.txt'
       void downloadOrShareBlobBasedOnPlatform({
         archiveService: application.archiveService,
@@ -87,7 +87,7 @@ const DataBackups = ({ application }: Props) => {
       })
     } else {
       const zippedDecryptedItemsBlob = await application.archiveService.getZippedDecryptedItemsBlob(data)
-      const filename = `Standard Notes Backup - ${application.archiveService.formattedDateForExports()}`
+      const filename = `Standard Notium Backup - ${application.archiveService.formattedDateForExports()}`
       const sanitizedFilename = sanitizeFileName(filename) + '.zip'
       void downloadOrShareBlobBasedOnPlatform({
         archiveService: application.archiveService,

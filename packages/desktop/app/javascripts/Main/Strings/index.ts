@@ -63,4 +63,4 @@ function stringsForLocale(locale: string): Strings {
   return createEnglishStrings()
 }
 
-export const AppName = 'Standard Notes'
+export const AppName = 'Standard Notium'

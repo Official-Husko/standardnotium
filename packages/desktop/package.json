@@ -3,11 +3,11 @@
   "main": "./app/dist/index.js",
   "version": "3.110.81",
   "license": "AGPL-3.0",
-  "author": "Standard Notes.",
+  "author": "Standard Notium",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/standardnotes/app"
+    "url": "git://github.com/Official-Husko/standardnotium"
   },
   "workspaces": {
     "packages": [
@@ -84,8 +84,8 @@
     "webpack-merge": "*"
   },
   "build": {
-    "appId": "org.standardnotes.standardnotes",
-    "artifactName": "standard-notes-${version}-${os}-${arch}.${ext}",
+    "appId": "com.husko.standardnotium",
+    "artifactName": "standard-notium-${version}-${os}-${arch}.${ext}",
     "afterSign": "scripts/notarizeMac.js",
     "files": [
       "compiled/**/*",
@@ -96,7 +96,7 @@
     ],
     "protocols": [
       {
-        "name": "Standard Notes",
+        "name": "Standard Notium",
         "schemes": [
           "standardnotes"
         ]
@@ -108,7 +108,7 @@
       "entitlements": "./build/entitlements.mac.inherit.plist",
       "entitlementsInherit": "./build/entitlements.mac.inherit.plist",
       "extendInfo": {
-        "NSCameraUsageDescription": "Standard Notes requires access to your camera to enable the Moments feature."
+        "NSCameraUsageDescription": "Standard Notium requires access to your camera to enable the Moments feature."
       },
       "asarUnpack": [
         "node_modules/keytar",
@@ -120,10 +120,10 @@
       ]
     },
     "win": {
-      "certificateSubjectName": "Standard Notes Ltd.",
-      "publisherName": "Standard Notes Ltd.",
-      "signDlls": true,
-      "sign": "scripts/windowsSign.js"
+      "certificateSubjectName": "Standard Notium",
+      "publisherName": "Standard Notium",
+      "signDlls": false,
+      "sign": ""
     },
     "nsis": {
       "deleteAppDataOnUninstall": true
@@ -131,9 +131,9 @@
     "linux": {
       "category": "Office",
       "icon": "build/icon/",
-      "executableName": "standard-notes",
+      "executableName": "standard-notium",
       "desktop": {
-        "StartupWMClass": "standard notes"
+        "StartupWMClass": "Standard Notium"
       },
       "target": [
         "AppImage",

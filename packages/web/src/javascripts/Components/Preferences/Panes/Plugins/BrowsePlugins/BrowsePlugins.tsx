@@ -57,7 +57,7 @@ const BrowsePlugins: FunctionComponent = () => {
       </PreferencesSegment>
       <HorizontalSeparator />
       <Text className="mt-4 text-danger">
-        Plugins may not be actively maintained. Standard Notes cannot attest to the quality or user experience of these
+        Plugins may not be actively maintained. Standard Notium cannot attest to the quality or user experience of these
         plugins, and is not responsible for any data loss that may arise from their use.
       </Text>
 

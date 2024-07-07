@@ -16,11 +16,11 @@ export function themes(): ThemeFeatureDescription[] {
       foreground_color: '#ffffff',
       border_color: '#086DD6',
     },
-    availableInRoles: [RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
+    availableInRoles: [RoleName.NAMES.CoreUser, RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
   })
 
   const futura: ThemeFeatureDescription = FillThemeComponentDefaults({
-    availableInRoles: [RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
+    availableInRoles: [RoleName.NAMES.CoreUser, RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
     name: 'Futura',
     identifier: NativeFeatureIdentifier.TYPES.FuturaTheme,
     permission_name: PermissionName.FuturaTheme,
@@ -34,7 +34,7 @@ export function themes(): ThemeFeatureDescription[] {
   })
 
   const solarizedDark: ThemeFeatureDescription = FillThemeComponentDefaults({
-    availableInRoles: [RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
+    availableInRoles: [RoleName.NAMES.CoreUser, RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
     name: 'Solarized Dark',
     identifier: NativeFeatureIdentifier.TYPES.SolarizedDarkTheme,
     permission_name: PermissionName.SolarizedDarkTheme,
@@ -48,7 +48,7 @@ export function themes(): ThemeFeatureDescription[] {
   })
 
   const autobiography: ThemeFeatureDescription = FillThemeComponentDefaults({
-    availableInRoles: [RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
+    availableInRoles: [RoleName.NAMES.CoreUser, RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
     name: 'Autobiography',
     identifier: NativeFeatureIdentifier.TYPES.AutobiographyTheme,
     permission_name: PermissionName.AutobiographyTheme,
@@ -76,7 +76,7 @@ export function themes(): ThemeFeatureDescription[] {
   })
 
   const titanium: ThemeFeatureDescription = FillThemeComponentDefaults({
-    availableInRoles: [RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
+    availableInRoles: [RoleName.NAMES.CoreUser, RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
     name: 'Titanium',
     identifier: NativeFeatureIdentifier.TYPES.TitaniumTheme,
     permission_name: PermissionName.TitaniumTheme,
@@ -89,7 +89,7 @@ export function themes(): ThemeFeatureDescription[] {
   })
 
   const dynamic: ThemeFeatureDescription = FillThemeComponentDefaults({
-    availableInRoles: [RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
+    availableInRoles: [RoleName.NAMES.CoreUser, RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser],
     name: 'Dynamic Panels',
     identifier: NativeFeatureIdentifier.TYPES.DynamicTheme,
     permission_name: PermissionName.ThemeDynamic,

@@ -70,7 +70,7 @@ const PreferencesView: FunctionComponent<PreferencesProps> = ({ application, clo
           data-preferences-header
         >
           <div className="hidden h-8 w-8 md:block" />
-          <h1 className="text-base font-bold md:text-lg">Your preferences for Standard Notes</h1>
+          <h1 className="text-base font-bold md:text-lg">Your preferences for Standard Notium</h1>
           <RoundIconButton
             onClick={() => {
               closePreferences()

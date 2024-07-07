@@ -59,7 +59,7 @@ export const STRING_E2E_ENABLED =
 export const STRING_LOCAL_ENC_ENABLED =
   'Encryption is enabled. Your data is encrypted using your passcode before it is saved to your device storage.'
 export const STRING_ENC_NOT_ENABLED =
-  'Encryption is not enabled. Sign in, register, or add a passcode lock to enable encryption.'
+  'Encryption is not enabled. Add a passcode lock to enable encryption.'
 export const STRING_IMPORT_SUCCESS = 'Your data has been successfully imported.'
 export const STRING_REMOVE_PASSCODE_CONFIRMATION = 'Are you sure you want to remove your application passcode?'
 export const STRING_REMOVE_PASSCODE_OFFLINE_ADDENDUM = ' This will remove encryption from your local data.'

@@ -388,7 +388,7 @@ export class FeaturesService
   }
 
   private rolesIncludePaidSubscription(roles: string[]) {
-    const paidRoles = [RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser]
+    const paidRoles = [RoleName.NAMES.PlusUser, RoleName.NAMES.ProUser, RoleName.NAMES.CoreUser]
 
     return roles.some((role) => paidRoles.includes(role))
   }

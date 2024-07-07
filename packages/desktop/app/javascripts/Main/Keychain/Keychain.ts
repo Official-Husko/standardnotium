@@ -11,7 +11,7 @@ import { isDev, isTesting } from '../Utils/Utils'
 import { KeychainInterface } from './KeychainInterface'
 
 const ServiceName = isTesting() ? AppName + ' (Testing)' : isDev() ? AppName + ' (Development)' : AppName
-const AccountName = 'Standard Notes Account'
+const AccountName = 'Standard Notium Account'
 
 async function ensureKeychainAccess(store: Store): Promise<BrowserWindow | undefined> {
   if (!isLinux()) {

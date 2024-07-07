@@ -26,7 +26,6 @@ import { EditorEventSource } from '@/Types/EditorEventSource'
 import QuickSettingsButton from './QuickSettingsButton'
 import AccountMenuButton from './AccountMenuButton'
 import StyledTooltip from '../StyledTooltip/StyledTooltip'
-import UpgradeNow from './UpgradeNow'
 import PreferencesButton from './PreferencesButton'
 import VaultSelectionButton from './VaultSelectionButton'
 
@@ -378,11 +377,6 @@ class Footer extends AbstractComponent<Props, State> {
             <div className="relative z-footer-bar-item  ml-1.5 select-none">
               <VaultSelectionButton />
             </div>
-            <UpgradeNow
-              application={this.application}
-              featuresController={this.application.featuresController}
-              subscriptionContoller={this.application.subscriptionController}
-            />
             {this.state.showBetaWarning && (
               <Fragment>
                 <div className="relative z-footer-bar-item ml-3 flex select-none items-center border-l border-solid border-border pl-3">
@@ -434,11 +428,6 @@ class Footer extends AbstractComponent<Props, State> {
                 )}
               </div>
             )}
-            {this.state.offline && (
-              <div className="relative z-footer-bar-item ml-3 flex flex-shrink-0 select-none items-center text-xs font-bold">
-                Offline
-              </div>
-            )}
             {this.state.hasPasscode && (
               <StyledTooltip label="Lock application">
                 <div
@@ -450,6 +439,11 @@ class Footer extends AbstractComponent<Props, State> {
                   <Icon type="lock-filled" size="custom" className="h-4.5 w-4.5" />
                 </div>
               </StyledTooltip>
+            )}
+            {this.state.offline && (
+              <div className="relative z-footer-bar-item ml-3 flex flex-shrink-0 select-none items-center text-xs font-bold">
+                v{this.application.version}
+              </div>
             )}
           </div>
         </footer>

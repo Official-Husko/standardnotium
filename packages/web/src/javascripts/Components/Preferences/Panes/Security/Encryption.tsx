@@ -10,13 +10,10 @@ import { useApplication } from '@/Components/ApplicationProvider'
 const Encryption: FunctionComponent = () => {
   const app = useApplication()
 
-  const hasUser = app.hasAccount()
   const hasPasscode = app.hasPasscode()
   const isEncryptionEnabled = app.isEncryptionAvailable()
 
-  const encryptionStatusString = hasUser
-    ? STRING_E2E_ENABLED
-    : hasPasscode
+  const encryptionStatusString = hasPasscode
     ? STRING_LOCAL_ENC_ENABLED
     : STRING_ENC_NOT_ENABLED
 

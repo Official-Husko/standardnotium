@@ -19,7 +19,7 @@ const SubscriptionStatusText = () => {
       <Text className="mt-1">
         Your{' '}
         <span className="font-bold">
-          Standard Notes{userSubscriptionName ? ' ' : ''}
+          Standard Notium{userSubscriptionName ? ' ' : ''}
           {userSubscriptionName}
         </span>{' '}
         subscription has been canceled{' '}
@@ -38,7 +38,7 @@ const SubscriptionStatusText = () => {
       <Text className="mt-1">
         Your{' '}
         <span className="font-bold">
-          Standard Notes{userSubscriptionName ? ' ' : ''}
+          Standard Notium{userSubscriptionName ? ' ' : ''}
           {userSubscriptionName}
         </span>{' '}
         subscription <span className="font-bold">expired on {expirationDateString}</span>. You may resubscribe below if
@@ -51,7 +51,7 @@ const SubscriptionStatusText = () => {
     <Text className="mt-1">
       Your{' '}
       <span className="font-bold">
-        Standard Notes{userSubscriptionName ? ' ' : ''}
+        Standard Notium{userSubscriptionName ? ' ' : ''}
         {userSubscriptionName}
       </span>{' '}
       subscription will be <span className="font-bold">renewed on {expirationDateString}</span>.
