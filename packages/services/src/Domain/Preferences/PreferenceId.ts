@@ -6,7 +6,6 @@ const PREFERENCE_PANE_IDS = [
   'vaults',
   'appearance',
   'backups',
-  'listed',
   'plugins',
   'shortcuts',
   'accessibility',
