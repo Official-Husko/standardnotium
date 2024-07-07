@@ -1,6 +1,7 @@
 [![latest release version](https://img.shields.io/github/v/release/Official-Husko/standardnotium?label=latest%20release)](https://github.com/Official-Husko/standardnotium) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Official-Husko/standardnotium/total?color=dark-green) ![GitHub Repo stars](https://img.shields.io/github/stars/Official-Husko/standardnotium)
 
-
+> [!NOTE]  
+> Many things have already been stripped and removed. This is not the finished build tho. For now i will release it to see if people are even interested in this. Windows does not compile for whatever reason. Help would be appreciated.
 
 # Standard Notium
 
